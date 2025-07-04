@@ -3,7 +3,7 @@
 #define IN 1
 #define OUT 0
 
-/* This is a program that prints a histogram of the length words of words given in input
+/* This is a program that prints a histogram of the length of words given in input
  *
  * approach:
  * 1. declare an array of length 10 with all its values initialized to 0
