@@ -9,7 +9,9 @@
  * This happens because when we subtract 1 from a binary number all the trailing 0s are flipped to 1s
  * and the rightmost 1 is set to 0.
  * The assignment operator &= compares the bits of x and (x-1) and if both bits are 1 that 1 is
- * retained, otherwise it becomes 0.*/
+ * retained, otherwise it becomes 0.
+ * Therefore, when we perform the & comparison, the last bit will always be set to 0 since by
+ * definition the rightmost bit set to 1 in x will be replaced by a 0 in (x-1).*/
 
 int bitcount(unsigned x) {
     int count = 0;
